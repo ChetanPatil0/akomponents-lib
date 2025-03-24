@@ -38,10 +38,12 @@
     "@storybook/react": "^8.6.4",
     "@storybook/react-vite": "^8.6.4",
     "@storybook/test": "^8.6.4",
+    "@vitejs/plugin-react": "^4.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.34.9",
     "rollup-plugin-postcss": "^4.0.2",
-    "storybook": "^8.6.4"
+    "storybook": "^8.6.8",
+    "vite": "^6.2.3"
   }
 }

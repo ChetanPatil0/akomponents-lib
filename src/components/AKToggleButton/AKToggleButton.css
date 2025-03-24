@@ -1,0 +1,46 @@
+.ak-toggle-container {
+    width: 70px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding: 4px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  
+  .ak-toggle-slider {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 4px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .ak-toggle-container.on .ak-toggle-slider {
+    transform: translateX(34px);
+  }
+  
+  .ak-toggle-label {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .ak-toggle-label.on {
+    left: 12px;
+  }
+  
+  .ak-toggle-label.off {
+    right: 12px;
+  }
+  
+  .ak-toggle-container.on .ak-toggle-label.off {
+    opacity: 0;
+  }
+  
+  .ak-toggle-container:not(.on) .ak-toggle-label.on {
+    opacity: 0;
+  }
+  
